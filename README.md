@@ -26,7 +26,9 @@ ahora creamos el proyecto con el comando, asegurate de no estar en el entorno vi
 ```bash
 django-admin startproject zapatos_proyecto
 ```
-despues creamos la aplicacion con el comando
+deberia de crear una carpeta con el nobre ´zapatos_proyecto´ y dentro de ella deberia de haber un archivo llamado ´manage.py´
+
+despues creamos la aplicación y para ello nos ubicamos en la carpeta del proyecto y ejecutamos el siguiente comando:
 ```bash
 python manage.py startapp zapatos_app
 ```
