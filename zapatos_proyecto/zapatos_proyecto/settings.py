@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'zapatos_app'
+    'zapatos_app' #agregamos la app que creamos
 ]
 
 MIDDLEWARE = [
@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'zapatos_proyecto.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE' : 'django.db.backends.postgresql_psycopg2', #motor de base de datos
+        'NAME' : 'lab1', #nombre de la base de datos
+        'USER' : 'fl0user', #usuario de la base de datos
+        'PASSWORD' : 'Ryl5K9jBScuT', #contraseña de la base de datos
+        'HOST' : 'ep-dark-bread-a55zy6yw.us-east-2.aws.neon.fl0.io', #host de la base de datos
+        'PORT' : '5432', #si lo dejas vacío tomara el puerto por default
     }
 }
 

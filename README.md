@@ -36,8 +36,30 @@ registro la aplicación en el archivo `settings.py` del proyecto, en la lista `I
 
 ```python
 INSTALLED_APPS = [
+    ...    
     'zapatos_app',
-    ...
+
 ]
 ```
 
+por ultimo hacemo la coneccion a la base de datos instalando el paquete psycopg2 con el comando:
+```bash
+pip3 install psycopg2-binary==2.9.5
+```
+
+# segundo paso configuracion de la base de datos
+
+Para este proyecto usaremos fl0 para la base de datos asi que, en el archivo `settings.py` del proyecto, en el diccionario `DATABASES`:
+
+```python
+DATABASES = {
+    'default': {
+        'ENGINE' : 'django.db.backends.postgresql_psycopg2',
+        'NAME' : 'lab1',#nombre de la base de datos
+        'USER' : 'fl0user', #usuario de la base de datos
+        'PASSWORD' : '******', #contraseña de la base de datos
+        'HOST' : 'ep-dark-bread-a55zy6yw.us-east-2.aws.neon.fl0.io', #host de la base de datos
+        'PORT' : '5432', #si lo dejas vacío tomara el puerto por default
+    }
+}
+```
