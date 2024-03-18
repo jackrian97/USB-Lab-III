@@ -32,3 +32,12 @@ despues creamos la aplicación y para ello nos ubicamos en la carpeta del proyec
 ```bash
 python manage.py startapp zapatos_app
 ```
+registro la aplicación en el archivo `settings.py` del proyecto, en la lista `INSTALLED_APPS`:
+
+```python
+INSTALLED_APPS = [
+    'zapatos_app',
+    ...
+]
+```
+
