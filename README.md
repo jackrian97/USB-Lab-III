@@ -2,5 +2,23 @@
 CRUD using Django 
 mi proyecto sera basado en un modelo de zapatos
 
-#Primer paso
-creo el ambiente del proyecto con el comando python -m venv zapatos_env
+# priemr paso configuracion de entorno
+Creo el ambiente de desarrollo y para crear el ambiente del proyecto, ejecuto el siguiente comando en la terminal:
+
+```bash
+python -m venv zapatos_env
+```
+
+Este comando creará un nuevo entorno virtual de Python llamado `zapatos_env`.
+
+Ahora necesitamos instalar Django, para ello puedes usar pip3 ejecutando el siguiente comando en la terminal:
+
+```bash
+pip3 install django
+```
+
+Esto instalará la última versión estable de Django en tu entorno Python puedes verificar su intalacion con el comando.
+
+```bash
+pip3 list   
+```
