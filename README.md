@@ -22,3 +22,11 @@ Esto instalará la última versión estable de Django en tu entorno Python puede
 ```bash
 pip3 list   
 ```
+ahora creamos el proyecto con el comando, asegurate de no estar en el entorno virtual. deberia estar al mismo nivel que el entorno virtual.
+```bash
+django-admin startproject zapatos_proyecto
+```
+despues creamos la aplicacion con el comando
+```bash
+python manage.py startapp zapatos_app
+```
